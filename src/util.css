@@ -1,5 +1,5 @@
 :root {
-    --font: nunito;
+    --font: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     --gray-color: #CCC;
     --primary-color: #fa0;
     --warning-color: #ffd600;
@@ -267,26 +267,21 @@
     padding-left: 4em;
 }
 
-/*Misc Utilities*/
-.gapless{
-    border-spacing: 0;
-}
-.vc {
-    position: relative;
-    top: 40%;
-    transform: perspective(1px) translateY(-45%);
-}
-.pill {
-  border-radius: 9999px;
-}
-.rounded {
-  border-radius: 4px;
-}
+/*Text Utilities*/
 .tc {
     text-align: center;
 }
+.tr {
+    text-align: right;
+}
+.tl {
+    text-align: left;
+}
 .mega{
 	font-size: 3.5em;
+}
+.huge{
+	font-size: 2.25em;
 }
 .large{
 	font-size: 1.5em;
@@ -300,27 +295,41 @@
 .tracked {
 	letter-spacing: .1em;
 }
+.bold {
+	font-weight: 700;
+}
+.normal {
+	font-weight: 400;
+}
+.light{
+	font-weight: 300;
+}
+
+/*Misc Utilities*/
+.gapless{
+    border-spacing: 0;
+}
+.vc {
+    position: relative;
+    top: 40%;
+    transform: perspective(1px) translateY(-45%);
+}
 .vh-100 {
     height: 100vh;
 }
-
 .inline {
     display: inline-block;
 }
-.bold {
-	font-weight: 700
+.pill {
+  border-radius: 9999px;
 }
-.normal {
-	font-weight: 400
-}
-.light{
-	font-weight: 300
+.rounded {
+  border-radius: 4px;
 }
 .dim {
     opacity: 1;
     transition: opacity .15s ease-in;
 }
-
 .dim:hover,
 .dim:focus {
     opacity: .5;

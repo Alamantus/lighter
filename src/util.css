@@ -10,7 +10,11 @@
 
 /*Colors*/
 
-.white{
+.btn.info,
+.btn.success,
+.btn.error,
+.btn.warning,
+.c-white{
 	color: #FFF;
 }
 .bg-white{
@@ -19,7 +23,7 @@
 .b-white{
 	border-color: #FFF;
 }
-.gray{
+.c-gray{
     color: var(--gray-color);
 }
 .bg-gray{
@@ -28,7 +32,7 @@
 .b-gray{
     border-color: var(--gray-color);
 }
-.black{
+.c-black{
 	color: #000;
 }
 .bg-black{
@@ -37,7 +41,7 @@
 .b-black{
 	border-color: #000;
 }
-.primary:not(.btn) {
+.c-primary {
 	color: var(--primary-color);
 }
 .bg-primary {
@@ -46,39 +50,47 @@
 .b-primary {
 	border-color: var(--primary-color);
 }
-.warning {
+.c-warning {
 	color: var(--warning-color);
 }
+.btn.warning,
 .bg-warning {
 	background-color: var(--warning-color);
 }
+.btn.warning,
 .b-warning {
 	border-color: var(--warning-color);
 }
-.error {
+.c-error {
 	color: var(--error-color);
 }
+.btn.error,
 .bg-error {
 	background-color: var(--error-color);
 }
+.btn.error,
 .b-error {
 	border-color: var(--error-color);
 }
-.success {
+.c-success {
 	color: var(--success-color);
 }
+.btn.success,
 .bg-success {
 	background-color: var(--success-color);
 }
+.btn.success,
 .b-success {
 	border-color: var(--success-color);
 }
-.info {
+.c-info {
 	color: var(--info-color);
 }
+.btn.info,
 .bg-info {
 	background-color: var(--info-color);
 }
+.btn.info,
 .b-info {
 	border-color: var(--info-color);
 }

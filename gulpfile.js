@@ -6,12 +6,12 @@ function css(done) {
     var postcss = require('gulp-postcss');
     var cleanCSS = require('gulp-clean-css');
     var cssvariables = require('postcss-css-variables');
-    var zopfli= require('gulp-zopfli');
+    var gzip = require('gulp-gzip');
     return gulp.src('src/*.css')
         .pipe(postcss([cssvariables()]))
         .pipe(cleanCSS({ level: 2 }))
         .pipe(gulp.dest('dist/'))
-        .pipe(zopfli())
+        .pipe(gzip())
         .pipe(gulp.dest('dist/'));
     done();
 }

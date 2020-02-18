@@ -37,13 +37,13 @@
 .b-black{
 	border-color: #000;
 }
-.accent {
+.primary:not(.btn) {
 	color: var(--primary-color);
 }
-.bg-accent {
+.bg-primary {
 	background-color: var(--primary-color);
 }
-.b-accent {
+.b-primary {
 	border-color: var(--primary-color);
 }
 .warning {

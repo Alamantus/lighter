@@ -10,12 +10,101 @@
     --light: #eee;
 }
 
-* + *{
+* + * {
     box-sizing: border-box;
     margin: .5em 0;
 }
 
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+h1 {
+    font: 300 2.5em var(--font);
+}
+
+h2 {
+    font: 300 2.2em var(--font);
+}
+
+h3 {
+    font: 300 2em var(--font);
+}
+
+h4 {
+    font: 300 1.5em var(--font);
+}
+
+h5 {
+    font: 300 1.2em var(--font);
+}
+
+h6 {
+    font: 300 1em var(--font);
+}
+
+pre {
+    overflow: auto;
+}
+
+td,
+th {
+    padding: 1em;
+    text-align: left;
+    border-bottom: solid var(--light);
+}
+
+.c {
+    max-width: 60em;
+    padding: 1em;
+    margin: auto;
+    font: 1em/1.6 var(--font);
+}
+
+a:hover,
+.btn:hover {
+    opacity: .6;
+}
+
+.card,
+pre {
+    padding: 1em;
+    border: solid var(--light);
+}
+
+.card:focus,
+hr {
+    outline: 0;
+    border: solid var(--primary-color);
+}
+
+.btn {
+    padding: 1em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: white;
+    border: solid;
+    font: .7em var(--font);
+    cursor:pointer;
+}
+
+.btn.primary {
+    color: white;
+    background: var(--primary-color);
+    border: solid var(--primary-color);
+}
+
+.w-100,
+.row {
+    width: 100%;
+}
+
 @media(min-width:35em) {
+    .row {
+        display: table;
+        border-spacing: 1em 0;
+    }
     .col {
         display: table-cell;
     }
@@ -34,93 +123,4 @@
     .\32 {
         width: 15%;
     }
-    .row {
-        display: table;
-        border-spacing: 1em 0;
-    }
-}
-
-.w-100,
-.row {
-    width: 100%;
-}
-
-.card:focus,
-hr {
-    outline: 0;
-    border: solid var(--primary-color);
-}
-
-.card,
-pre {
-    padding: 1em;
-    border: solid var(--light);
-}
-
-a:hover,
-.btn:hover {
-    opacity: .6;
-}
-
-.c {
-    max-width: 60em;
-    padding: 1em;
-    margin: auto;
-    font: 1em/1.6 var(--font);
-}
-
-h6 {
-    font: 300 1em var(--font);
-}
-
-h5 {
-    font: 300 1.2em var(--font);
-}
-
-h3 {
-    font: 300 2em var(--font);
-}
-
-h4 {
-    font: 300 1.5em var(--font);
-}
-
-h2 {
-    font: 300 2.2em var(--font);
-}
-
-h1 {
-    font: 300 2.5em var(--font);
-}
-
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.btn.primary {
-    color: white;
-    background: var(--primary-color);
-    border: solid var(--primary-color);
-}
-
-pre {
-    overflow: auto;
-}
-
-td,
-th {
-    padding: 1em;
-    text-align: left;
-    border-bottom: solid var(--light);
-}
-
-.btn {
-    padding: 1em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    background: white;
-    border: solid;
-    font: .7em var(--font);
-    cursor:pointer;
 }

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>util</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
     <!-- Link to your stylesheet here -->
     <link rel="stylesheet" href="../dist/lit.css">
     <link rel="stylesheet" href="../dist/util.css">
@@ -33,6 +32,7 @@
         <p>For now, use the "view source" functionality of your browser as documentation</p>
         <div class="card p1 b-info">
             <a href="#spacing" class="ph2 c-info">Spacing</a>
+            <a href="#text" class="ph2 c-info">Text</a>
             <a href="#colors" class="ph2 c-info">Colors</a>
             <a href="#misc" class="ph2 c-info">Misc</a>
         </div>
@@ -44,6 +44,33 @@
             This example shows off margins. For the middle selector, you use t (top), b (bottom), l (left), and r (right) to say which direction you want the margin. Margin does not have v or h as directions.
             <div class="bg-info c-white p2 m2">p2 m2</div>
             If you want something on all sides, just do the above, with type then level.
+        </div>
+        <div id="text">
+            <h3 class="mb1">Text</h3> Util has several different classes for transforming text in various ways.
+
+            <div class="row">
+                <div class="6 col">
+                    <h4 class="mb1">Size</h4>
+                    <p class="mt0 card mega">mega</p>
+                    <p class="card huge">huge</p>
+                    <p class="card large">large</p>
+                    <p class="card">regular</p>
+                    <p class="card small">small</p>
+                </div>
+                <div class="col">
+                    <h4 class="mb1">Alignment</h4>
+                    <p class="card tl">tl</p>
+                    <p class="card tc">tc</p>
+                    <p class="card tr">tr</p>
+
+                    <h4 class="mb1">Miscellaneous</h4>
+                    <p class="card bold">bold</p>
+                    <p class="card normal">normal</p>
+                    <p class="card light">light</p>
+                    <p class="card caps">caps</p>
+                    <p class="card tracked">tracked</p>
+                </div>
+            </div>
         </div>
         <div id="colors">
             <h3 class="mb1">Colors</h3>
@@ -89,6 +116,7 @@
         </div>
         <div id="buttons">
             <h3 class="mb1">Buttons</h3>
+            Basic, solid color buttons are built in, but you can achieve the following buttons with various util classes.
             <h4>Basic Buttons</h4>
             <button class="btn primary">Primary Button</button>
             <button class="btn info">Info Button</button>
@@ -128,6 +156,7 @@
         </div>
         <div id="alerts">
             <h3 class="mb1">Alerts</h3>
+            Using color classes and spacing classes, it's easy to create any kind of alert box you might need!
             <div class="bg-error c-white pv1 ph2 rounded">
                 <p class="large m0">Oh no!</p>
                 This is an example of an error alert
@@ -135,9 +164,13 @@
             <div class="bg-warning c-white pv1 ph2 rounded">
                 This is an example of a warning alert
             </div>
+            <div class="card b-info c-info rounded">
+                You can also re-color card borders
+            </div>
         </div>
         <div id="navbar">
             <h3 class="mb1">Navbar</h3>
+            By exploiting how the grid works and pairing it with color classes, you can create a convincing nav bar!
             <div class="bg-success pv2 row">
                 <div class="col">
                     <a href="#buttons" class="c-white ph2">Menu</a>
@@ -151,6 +184,7 @@
         </div>
         <div id="badges">
             <h3 class="mb1">Badges</h3>
+            By inserting a <code>span</code> class with different background and color classes, you can create badges within another element.
             <h4>Heading Badge <span class="bg-warning bold c-white ph1 rounded">
                New
             </span></h4>
@@ -160,6 +194,7 @@
         </div>
         <div id="list-group">
             <h3 class="mb1">List Groups</h3>
+            <p>This also demonstrates the <code>inline</code> class!</p>
             <div class="inline p0 rounded">
                 <div class="card m0">Some item that is long</div>
                 <div class="card m0">Some item</div>
@@ -173,6 +208,10 @@
         </div>
     </div>
     <div id="full">
+        <div class="c">
+            <h3 class="mb1">Full Page Landing</h3>
+            Using the <code>vh-100</code>, <code>vc</code>, and <code>tc</code> classes with a background color, you can create a screen-filling hero section.
+        </div>
         <div class="tc vh-100 bg-info">
             <div class="vc c c-white">
                 <h1 class="mega mb0">Name</h1>

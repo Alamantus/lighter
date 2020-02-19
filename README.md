@@ -29,8 +29,8 @@ fuel is an atomic css addon for lighter. Check it out at https://alamantus.githu
 ## Getting Started
 1. Install lighter.css with one of the following:
   - NPM: `npm install --save @alamantus/lighter`
-  - CSS3: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.0.0/dist/lighter.css" />`
-  - CSSNext: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.0.0/src/lighter.css" />`
+  - CSS3: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.0.1/dist/lighter.css" />`
+  - CSSNext: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.0.1/src/lighter.css" />`
 2. [Read the Docs](https://alamantus.github.io/lighter/) to see usage
 
 Note: lighter uses PostCSS to transform from CSSNext to CSS3. If you are comfortable outright using CSSNext, you can directly

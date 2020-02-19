@@ -1,11 +1,11 @@
 :root {
     --font: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     --gray-color: #CCC;
-    --primary-color: #fa0;
-    --warning-color: #ffd600;
-    --error-color: #d50000;
-    --success-color: #00c853;
-    --info-color: #2962ff;
+    --primary-color: #a402c0;
+    --info-color: #008dcb;
+    --success-color: #258039;
+    --warning-color: #f5be41;
+    --error-color: #cf3721;
 }
 
 /*Colors*/

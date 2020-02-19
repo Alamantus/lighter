@@ -10,6 +10,12 @@
     --light: #eee;
 }
 
+html, body, button,
+input, select, textarea {
+    font-family: var(--font);
+    font-size: 12pt;
+}
+
 * + * {
     box-sizing: border-box;
     margin: .5em 0;
@@ -20,28 +26,32 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
 h1 {
-    font: 300 2.5em var(--font);
+    font-size: 2.5em;
 }
 
 h2 {
-    font: 300 2.2em var(--font);
+    font-size: 2.2em;
 }
 
 h3 {
-    font: 300 2em var(--font);
+    font-size: 2em;
 }
 
 h4 {
-    font: 300 1.5em var(--font);
+    font-size: 1.5em;
 }
 
 h5 {
-    font: 300 1.2em var(--font);
+    font-size: 1.2em;
 }
 
 h6 {
-    font: 300 1em var(--font);
+    font-size: 1em;
 }
 
 pre {
@@ -59,7 +69,7 @@ th {
     max-width: 60em;
     padding: 1em;
     margin: auto;
-    font: 1em/1.6 var(--font);
+    font-size: 1em/1.6;
 }
 
 a:hover,
@@ -85,7 +95,7 @@ hr {
     text-transform: uppercase;
     background: white;
     border: solid;
-    font: .7em var(--font);
+    font-size: .7em;
     cursor:pointer;
 }
 

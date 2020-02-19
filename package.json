@@ -1,25 +1,28 @@
 {
-  "name": "@ajusa/lit",
+  "name": "@alamantus/lighter",
   "version": "2.0.0",
-  "description": "a super tiny css framework",
-  "main": "lit.css",
+  "description": "a ridiculously small css framework",
+  "main": "lighter.css",
   "scripts": {
     "build": "gulp",
     "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ajusa/lit.git"
+    "url": "git+https://github.com/Alamantus/lighter.git"
   },
   "keywords": [
     "css"
   ],
-  "author": "Arham Jain",
+  "authors": [
+    "Arham Jain",
+    "Robbie Antenesse"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ajusa/lit/issues"
+    "url": "https://github.com/Alamantus/lighter/issues"
   },
-  "homepage": "https://github.com/Ajusa/lit#readme",
+  "homepage": "https://github.com/Alamantus/lighter#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-clean-css": "^3.9.2",

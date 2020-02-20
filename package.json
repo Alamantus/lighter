@@ -28,6 +28,8 @@
     "gulp-clean-css": "^3.9.2",
     "gulp-gzip": "^1.4.2",
     "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1",
     "postcss-css-variables": "^0.8.0"
   }
 }

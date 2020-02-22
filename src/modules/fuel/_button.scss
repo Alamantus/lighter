@@ -1,22 +1,24 @@
 @import '../../variables';
 
-.btn.primary,
-.btn.info,
-.btn.success,
-.btn.error,
-.btn.warning,
-.btn.black {
-	color: $white;
-}
-.btn.gray,
-.btn.light,
-.btn.white {
-	color: $black;
-}
+.btn {
+  &.primary,
+  &.info,
+  &.success,
+  &.error,
+  &.warning,
+  &.black {
+    color: $white;
+  }
+  &.gray,
+  &.light,
+  &.white {
+    color: $black;
+  }
 
-@each $name, $color in $colors {
-  .btn.#{$name} {
-    background-color: $color;
-    border-color: $color;
+  @each $name, $color in $colors {
+    &.#{$name} {
+      background: $color;
+      border-color: $color;
+    }
   }
 }

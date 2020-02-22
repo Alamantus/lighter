@@ -1,0 +1,7 @@
+@import '../../../variables';
+
+@each $name, $color in $colors {
+  .c-#{$name} {
+    color: $color;
+  }
+}

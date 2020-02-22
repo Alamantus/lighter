@@ -1,0 +1,20 @@
+@import '../../variables';
+
+.row {
+  width: 100%;
+}
+
+@media(min-width: $breakpoint) {
+  .row {
+    display: table;
+    border-spacing: 1em 0;
+  }
+  .col {
+    display: table-cell;
+  }
+  @for $i from 1 through 6 {
+    .\3#{$i} {
+      width: 100% * ($i / 12);
+    }
+  }
+}

@@ -9,4 +9,15 @@ $success: #258039 !default;
 $warning: #f5be41 !default;
 $error: #cf3721 !default;
 
+$colors: (
+  'white': $white,
+  'gray': $gray,
+  'black': $black,
+  'primary': $primary,
+  'info': $info,
+  'success': $success,
+  'warning': $warning,
+  'error': $error,
+);
+
 $breakpoint: 35em;

@@ -1,0 +1,31 @@
+@for $i from 0 through 4 {
+  $amount: ($i - floor($i * 0.5em));
+  @if $i == 1 {$amount: 0.5em}
+  @if $i == 4 {$amount: 4em}
+  .m#{$i} {
+    margin: $amount;
+  }
+  .mt#{$i} {
+    margin-top: $amount;
+  }
+  .mb#{$i} {
+    margin-bottom: $amount;
+  }
+  .ml#{$i} {
+    margin-left: $amount;
+  }
+  .mr#{$i} {
+    margin-right: $amount;
+  }
+  .p#{$i} {
+    padding: $amount;
+  }
+  .pv#{$i} {
+    padding-top: $amount;
+    padding-bottom: $amount;
+  }
+  .ph#{$i} {
+    padding-left: $amount;
+    padding-right: $amount;
+  }
+}

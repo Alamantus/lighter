@@ -1,0 +1,21 @@
+@import '../../variables';
+
+* + * {
+  box-sizing: border-box;
+  margin: .5em 0;
+}
+
+.c {
+  max-width: 60em;
+  padding: 1em;
+  margin: auto;
+}
+
+hr {
+  outline: 0;
+  border: solid $primary;
+}
+
+.w-100 {
+  width: 100%;
+}

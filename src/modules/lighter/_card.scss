@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.card {
+  padding: 1em;
+  border: solid $light;
+}
+
+.card:focus {
+  outline: 0;
+  border: solid $primary;
+}

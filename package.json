@@ -1,10 +1,11 @@
 {
   "name": "@alamantus/lighter",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "a ridiculously small css framework",
   "main": "lighter.css",
   "scripts": {
     "build": "gulp",
+    "build-css": "gulp from-css",
     "watch": "gulp watch"
   },
   "repository": {

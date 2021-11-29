@@ -2,23 +2,22 @@
 
 .btn {
   &.primary,
+  &.accent,
   &.info,
   &.success,
-  &.error,
-  &.warning,
-  &.black {
+  &.error {
     color: $white;
   }
-  &.gray,
-  &.light,
-  &.white {
+  &.warning {
     color: $black;
   }
 
   @each $name, $color in $colors {
-    &.#{$name} {
-      background: $color;
-      border-color: $color;
+    @if $name != 'black' and $name != 'white' and $name != 'gray' and $name != 'light' {
+      &.#{$name} {
+        background: $color;
+        border-color: $color;
+      }
     }
   }
 }

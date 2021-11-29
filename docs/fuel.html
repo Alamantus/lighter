@@ -69,6 +69,10 @@
                     <p class="card light">light</p>
                     <p class="card caps">caps</p>
                     <p class="card tracked">tracked</p>
+                    <p class="small">
+                        Reminder: You can use <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> for <i>italic</i><br />
+                        and <code>&lt;u&gt;</code> for <u>underline</u>
+                    </p>
                 </div>
             </div>
         </div>
@@ -76,6 +80,7 @@
             <h3 class="mb1">Colors</h3>
             <h4>Text Colors</h4>
             <span class="ph1 c-primary">c-primary</span>
+            <span class="ph1 c-accent">c-accent</span>
             <span class="ph1 c-info">c-info</span>
             <span class="ph1 c-success">c-success</span>
             <span class="ph1 c-warning">c-warning</span>
@@ -85,6 +90,7 @@
             <span class="ph1 c-gray">c-gray</span>
             <h4>Background Colors</h4>
             <div class="p1 c-white bg-primary">bg-primary</div>
+            <div class="p1 c-white bg-accent">bg-accent</div>
             <div class="p1 c-white bg-info">bg-info</div>
             <div class="p1 c-white bg-success">bg-success</div>
             <div class="p1 c-white bg-warning">bg-warning</div>
@@ -94,6 +100,7 @@
             <div class="p1 c-black bg-gray">bg-gray</div>
             <h4>Border Colors</h4>
             <div class="card p1 b-primary">b-primary</div>
+            <div class="card p1 b-accent">b-accent</div>
             <div class="card p1 b-info">b-info</div>
             <div class="card p1 b-success">b-success</div>
             <div class="card p1 b-warning">b-warning</div>
@@ -128,7 +135,7 @@
         </div>
         <h2 class="mb1" id="components">Components</h2>
         <p>For now, use the "view source" functionality of your browser as documentation</p>
-        <div class="card p1 b-primary">
+        <div class="card p1 b-accent">
             <a href="#buttons" class="ph2">Buttons</a>
             <a href="#alerts" class="ph2">Alerts</a>
             <a href="#navbar" class="ph2">Navbar</a>
@@ -137,39 +144,45 @@
         </div>
         <div id="buttons">
             <h3 class="mb1">Buttons</h3>
-            Basic, solid color buttons are built in, but you can achieve the following buttons with various fuel classes.
+            Basic, solid color (<code>primary</code>) buttons are built in to lighter, but you can achieve the following buttons with various fuel classes.
             <h4>Basic Buttons</h4>
             <button class="btn primary">Primary Button</button>
+            <button class="btn accent">Accent Button</button>
             <button class="btn info">Info Button</button>
             <button class="btn success">Success Button</button>
             <button class="btn warning">Warning Button</button>
             <button class="btn error">Error Button</button>
             <h4>Ghost Buttons</h4>
             <button class="btn b-primary c-primary">Primary Button</button>
+            <button class="btn b-accent c-accent">Accent Button</button>
             <button class="btn b-info c-info">Info Button</button>
             <button class="btn b-success c-success">Success Button</button>
             <button class="btn b-warning c-warning">Warning Button</button>
             <button class="btn b-error c-error">Error Button</button>
             <h4>Rounded Buttons</h4>
             <button class="rounded btn primary">Primary Button</button>
+            <button class="rounded btn accent">Accent Button</button>
             <button class="rounded btn info">Info Button</button>
             <button class="rounded btn success">Success Button</button>
             <button class="rounded btn warning">Warning Button</button>
             <button class="rounded btn error">Error Button</button>
             <br>
             <button class="rounded btn b-primary c-primary">Primary Button</button>
+            <button class="rounded btn b-accent c-accent">Accent Button</button>
             <button class="rounded btn b-info c-info">Info Button</button>
             <button class="rounded btn b-success c-success">Success Button</button>
             <button class="rounded btn b-warning c-warning">Warning Button</button>
             <button class="rounded btn b-error c-error">Error Button</button>
             <h4>Pill Buttons</h4>
             <button class="pill btn primary">Primary Button</button>
+            <button class="pill btn accent">Accent Button</button>
             <button class="pill btn info">Info Button</button>
             <button class="pill btn success">Success Button</button>
             <button class="pill btn warning">Warning Button</button>
             <button class="pill btn error">Error Button</button>
             <br>
             <button class="pill btn b-primary c-primary">Primary Button</button>
+            <button class="pill btn b-accent c-accent">Accent Button</button>
             <button class="pill btn b-info c-info">Info Button</button>
             <button class="pill btn b-success c-success">Success Button</button>
             <button class="pill btn b-warning c-warning">Warning Button</button>
@@ -182,7 +195,7 @@
                 <p class="large m0">Oh no!</p>
                 This is an example of an error alert
             </div>
-            <div class="bg-warning c-white pv1 ph2 rounded">
+            <div class="bg-warning c-black pv1 ph2 rounded">
                 This is an example of a warning alert
             </div>
             <div class="card b-info c-info rounded">
@@ -192,16 +205,25 @@
         <div id="navbar">
             <h3 class="mb1">Navbar</h3>
             By exploiting how the grid works and pairing it with color classes, you can create a convincing nav bar!
-            <div class="bg-success pv2 row">
-                <div class="col">
-                    <a href="#buttons" class="c-white ph2">Menu</a>
-                    <a href="#alerts" class="c-white ph2">Item</a>
-                    <a href="#navbar" class="c-white ph2">Blog</a>
-                </div>
-                <div class="2 col">
-                    <a href="#full" class="c-white ph2">Download</a>
-                </div>
-            </div>
+            <!-- Note, you could use simpler HTML, but this helps screen readers navigate better! Be an A11y :) -->
+            <nav class="bg-success pv2 row">
+                <ul class="col p0" style="list-style:none;">
+                    <li class="inline">
+                        <a href="#buttons" class="c-white ph2">Menu</a>
+                    </li>
+                    <li class="inline">
+                        <a href="#alerts" class="c-white ph2">Item</a>
+                    </li>
+                    <li class="inline">
+                        <a href="#navbar" class="c-white ph2">Blog</a>
+                    </li>
+                </ul>
+                <ul class="2 col p0" style="list-style:none;">
+                    <li class="inline">
+                        <a href="#full" class="c-white ph2">Download</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div id="badges">
             <h3 class="mb1">Badges</h3>
@@ -222,7 +244,7 @@
                 <div class="card m0">Some item, that exists</div>
             </div>
             <div class="inline p0 rounded">
-                <div class="card m0 bg-primary c-white">Selected Item</div>
+                <div class="card m0 bg-accent c-white">Selected Item</div>
                 <div class="card m0">Some item</div>
                 <div class="card m0">Some item, that exists</div>
             </div>

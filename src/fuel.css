@@ -1,44 +1,45 @@
 :root {
-    --font: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     --gray-color: #CCC;
-    --primary-color: #a402c0;
-    --info-color: #008dcb;
-    --success-color: #258039;
-    --warning-color: #f5be41;
-    --error-color: #cf3721;
+    --primary-color: #a0c;
+    --accent-color: #f73;
+    --info-color: #09d;
+    --success-color: #084;
+    --warning-color: #fc5;
+    --error-color: #c33;
 }
 
 /*Colors*/
 
+.btn.accent,
 .btn.info,
 .btn.success,
 .btn.error,
-.btn.warning,
-.c-white{
+.c-white {
 	color: #FFF;
 }
-.bg-white{
+.bg-white {
 	background-color: #FFF;
 }
-.b-white{
+.b-white {
 	border-color: #FFF;
 }
-.c-gray{
+.c-gray {
     color: var(--gray-color);
 }
-.bg-gray{
+.bg-gray {
     background-color: var(--gray-color);
 }
-.b-gray{
+.b-gray {
     border-color: var(--gray-color);
 }
-.c-black{
+.btn.warning,
+.c-black {
 	color: #000;
 }
-.bg-black{
+.bg-black {
 	background-color: #000;
 }
-.b-black{
+.b-black {
 	border-color: #000;
 }
 .c-primary {
@@ -49,6 +50,17 @@
 }
 .b-primary {
 	border-color: var(--primary-color);
+}
+.c-accent {
+	color: var(--accent-color);
+}
+.btn.accent,
+.bg-accent {
+	background-color: var(--accent-color);
+}
+.btn.accent,
+.b-accent {
+	border-color: var(--accent-color);
 }
 .c-warning {
 	color: var(--warning-color);
@@ -277,16 +289,16 @@
 .tl {
     text-align: left;
 }
-.mega{
+.mega {
 	font-size: 3.5em;
 }
-.huge{
+.huge {
 	font-size: 2.25em;
 }
-.large{
+.large {
 	font-size: 1.5em;
 }
-.small{
+.small {
 	font-size: .7em;
 }
 .caps {
@@ -299,14 +311,14 @@
 	font-weight: 700;
 }
 .normal {
-	font-weight: 400;
+	font-weight: normal;
 }
-.light{
+.light {
 	font-weight: 300;
 }
 
 /*Misc Utilities*/
-.gapless{
+.gapless {
     border-spacing: 0;
 }
 .vc {

@@ -5,7 +5,7 @@
   "main": "lighter.css",
   "scripts": {
     "build": "gulp",
-    "build-css": "gulp from-css",
+    "build-sass": "gulp from-scss",
     "watch": "gulp watch"
   },
   "repository": {

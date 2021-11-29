@@ -1,11 +1,13 @@
 :root {
-    --font: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    --primary-color: #a402c0;
+    --font: sans-serif; /* Recommended: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif */
+    --primary-color: #a0c;
     --light: #eee;
 }
 
 html {
     font-family: var(--font);
+}
+html, input, select, option, text {
     font-size: 12pt;
 }
 
@@ -24,10 +26,6 @@ a {
 
 code {
   font-family: monospace;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
 }
 
 h1 {
@@ -69,7 +67,6 @@ th {
     max-width: 60em;
     padding: 1em;
     margin: auto;
-    font-size: 1em/1.6;
 }
 
 a:hover,
@@ -93,7 +90,8 @@ hr {
     padding: 1em;
     letter-spacing: .1em;
     border: solid;
-    cursor:pointer;
+    cursor: pointer;
+    font-size: 1em;
 }
 
 .btn.primary {

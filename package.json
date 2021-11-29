@@ -24,14 +24,17 @@
     "url": "https://github.com/Alamantus/lighter/issues"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "cssnano-preset-advanced": "^4.0.7",
+    "cssnano": "^5.0.12",
+    "cssnano-preset-advanced": "^5.1.8",
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
     "gulp-gzip": "^1.4.2",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-size": "^3.0.0",
-    "node-sass": "^4.13.1",
-    "postcss-csso": "^4.0.0"
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-size": "^4.0.1",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.4.4",
+    "postcss-css-variables": "^0.18.0",
+    "postcss-csso": "^5.0.1"
   }
 }

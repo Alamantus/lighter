@@ -1,6 +1,6 @@
 {
   "name": "@alamantus/lighter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "a ridiculously small css framework",
   "main": "lighter.css",
   "scripts": {

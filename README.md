@@ -24,12 +24,12 @@ fuel is an atomic css addon for lighter. Check it out at https://alamantus.githu
 
 ## Getting Started
 1. Install lighter.css with one of the following:
-  - NPM: `npm install --save @alamantus/lighter`
-  - CSS3: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.2.0/dist/lighter.css" />`
-  - CSSNext: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.2.0/src/lighter.css" />`
+   - NPM: `npm install --save @alamantus/lighter`
+   - CSS3: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.2.0/dist/lighter.css" />`
+   - CSSNext: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.2.0/src/lighter.css" />`
 2. (Optional) Add fuel.css if you want more:
-  - CSS3: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.2.0/dist/fuel.css" />`
-  - CSSNext: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.2.0/src/fuel.css" />`
+   - CSS3: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.2.0/dist/fuel.css" />`
+   - CSSNext: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alamantus/lighter@1.2.0/src/fuel.css" />`
 3. [Read the Docs](https://alamantus.github.io/lighter/) to see usage
 
 Note: lighter uses `node-sass` to transform from SCSS to CSS3. Each element of lighter and fuel is split into separate "modules"
